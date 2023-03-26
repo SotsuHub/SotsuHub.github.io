@@ -21,9 +21,9 @@ async function notPushButtonClick() {
         await wait(2);
     }
     unicorn.src = url + "unicorn_none.png";
-    await wait(5);
+    await wait(6);
     unicorn.src = url + "unicorn_half.gif";
-    await wait(5);
+    await wait(6);
     unicorn.src = url + "unicorn_0.gif";
 }
 

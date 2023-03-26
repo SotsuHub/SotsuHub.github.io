@@ -5,7 +5,7 @@ let notPushButton = document.getElementById("notPushButton");
 let unicorn = document.getElementById("unicorn");
 
 // gifを配列に入れる
-const url = "https://github.com/SotsuHub/SotsuHub.github.io/blob/main/pictures/";
+const url = "pictures/";
 const gifCount = 4;
 const pictures = [];
 for (let i = 0; i <= gifCount; i++) {

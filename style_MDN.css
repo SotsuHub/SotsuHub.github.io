@@ -12,7 +12,7 @@ header.header img {
     border-bottom: solid 1px #cdcdcd;
     border: right 1px #cdcdcd;
     background-color: #e5f3fe;
-    color: #6e9cce;
+    color: #1071c4;
 }
 
 /* 🥶見出し */
@@ -34,7 +34,7 @@ table {
 table,
 div {
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
 }
 
 th {
@@ -75,7 +75,7 @@ textarea {
 
 /* 🔥実行ボタン・リセットボタン */
 .buttonClass {
-    width: 80%;
+    width: 70%;
 }
 .button {
     border: 1px solid #aaa;

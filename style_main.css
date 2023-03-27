@@ -1,4 +1,11 @@
-/* 🔥ボタン */
+header.header img {
+    width: 160px;
+}
+h1 {
+    border-top: 2px solid #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
+    padding: 10px;
+}
 .button {
     width: 120px;
     height: 40px;
@@ -7,11 +14,11 @@
     background-color: ghostwhite;
     border-color: #00b57b;
     border-bottom: 5px solid #00b57b;
+    border-right: 3px solid #00b57b;
+    border-radius: 20px;
 }
 .button:hover {
     margin-top: 3px;
     border-bottom: 2px solid #00b57b;
-}
-.button--radius {
-    border-radius: 100vh;
+    border-right: 2px solid #00b57b;
 }

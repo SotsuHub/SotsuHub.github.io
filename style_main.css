@@ -1,5 +1,7 @@
 header.header img {
     width: 160px;
+    margin-left: 35px;
+    margin-top: 12px;
 }
 h1 {
     border-top: 2px solid #cdcdcd;

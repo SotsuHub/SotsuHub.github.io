@@ -1,11 +1,30 @@
 /* 🤯ヘッダー */
 header.header img {
-    width: 250px;
+    width: 330px;
 }
+.header-right {
+    display: inline-block;
+    height: 50px;
+    width: 180px;
+    position: absolute;
+    right: 0;
+    margin: 1em auto;
+}
+.subButton {
+    color: #ffffff;
+    background-color: #10a37f;
+    border-radius: 15px;
+    border: #aaa;
+    padding: 10px 20px;
+}
+.subButton:hover {
+    background-color: #1a7f64;
+}
+
 /* 🐏ボックス */
 .box {
     margin: 1em auto;
-    padding: 1.5em;
+    padding: 1em;
     width: 100%;
     border-left: solid 5px #0085f2;
     border-top: solid 1px #cdcdcd;
@@ -17,12 +36,12 @@ header.header img {
 
 /* 🥶見出し */
 h1 {
-    font-size: 250%;
+    font-size: 220%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 h2 {
-    font-size: 180%;
+    font-size: 160%;
     font-weight: normal;
 }
 
@@ -59,7 +78,7 @@ table tr td:nth-of-type(2) {
     border: 1px solid #ccc;
     background-color: white;
     padding: 5px;
-    height: 200px;
+    height: 180px;
 }
 textarea {
     vertical-align: top;
@@ -105,11 +124,15 @@ textarea {
     margin-top: 10px;
     padding: 10px 10px;
     font-size: 1rem;
-    height: 100px;
+    height: 80px;
     background-color: #f5f5f5;
     text-align: left;
     pointer-events: none;
     overflow: auto;
+}
+
+#output:first-letter {
+    font-size: 28px;
 }
 
 /* コピーボタン */
@@ -135,11 +158,11 @@ textarea {
     cursor: pointer;
 }
 
+/* 構文 */
 .box2 {
-    margin: 1em;
-    width: 75%;
-    padding: 1em;
+    width: 70%;
+    padding: 5px 10px;
     font-size: 0.8em;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #f2f1f1;
 }

@@ -1,11 +1,24 @@
 "use strict";
 // Please don't delete the 'use strict' line above
 
+// 初期設定
 let input = document.getElementById("input");
 input.value = "";
 let runButton = document.getElementById("runButton");
 let resetButton = document.getElementById("resetButton");
 let output = document.getElementById("output");
+const word = [
+    "匹しかサカナ食べれへんの？まじ？",
+    "ｍ以上跳んだって・・・ほんま？",
+    "日くらい晴れつづいとるがな",
+    "時間しか寝てへんねん、しんどい",
+    "度？えぐっ",
+    "キロやせたん？どないしてん",
+    "万円は高いが・・・しゃあない",
+    "人ぶん？なんでやねん！",
+    "杯飲んだわー、酔ったわー",
+    "ヤードかー・・・さむっ",
+];
 
 // 実行ボタンのクリック処理
 runButton.addEventListener("click", runButtonClick);
@@ -13,19 +26,19 @@ function runButtonClick() {
     let result;
     let program = input.value;
     console.log(program);
-
     if (program == "") {
-        output.innerHTML = "😸:まずは入力してみてからや";
+        output.innerHTML = "😸 :まずは入力してみてからや";
     } else {
         // result = eval(program); //evalはevil
         result = functionExecution(program);
-
         if (result == "エラー") {
-            output.innerHTML = "😸:さすがにそれはエラーやって";
+            output.innerHTML = "😸 : さすがにそれはエラーやって";
         } else if (typeof result === "string") {
-            output.innerHTML = "😸:それなーstringいうねん";
+            output.innerHTML = "😸 : それなー string いうねん";
+        } else if (typeof result === "undefined") {
+            output.innerHTML = "😸 : ナイことがアルのを undefined いうねん";
         } else {
-            output.innerHTML = "😸:" + result + randomWord();
+            output.innerHTML = "😸 : " + result + randomWord();
         }
     }
 }
@@ -40,9 +53,7 @@ function functionExecution(program) {
             let LF = program.indexOf(checkString(program)) + 1;
             program = program.slice(LF);
 
-            return Function(
-                '"use strict";' + constCode + "return " + program
-            )();
+            return Function('"use strict";' + constCode + "return " + program)();
         } else {
             return Function('"use strict";return ' + program)();
         }
@@ -71,17 +82,6 @@ function checkString(str) {
 
 // ランダムワード
 function randomWord() {
-    let result = Math.floor(Math.random() * 5);
-    return wordChoice(result);
-}
-
-function wordChoice(num) {
-    const lastWord = [
-        "匹しかさかな食べれへんの？",
-        "ｍ以上跳んだってほんまかいな",
-        "日くらいハレっぱなしやんなー",
-        "時間しか寝てへんねん",
-        "杯もごはん食べてん、きのう",
-    ];
-    return lastWord[num];
+    let num = Math.floor(Math.random() * word.length);
+    return word[num];
 }

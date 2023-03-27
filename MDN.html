@@ -2,12 +2,8 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="theme-color" content="#000000" />
-
         <link
             rel="apple-touch-icon"
             type="image/png"
@@ -16,14 +12,15 @@
         <link rel="icon" type="image/png" href="favicons/icon-192x192.png" />
         <link rel="stylesheet" href="style_MDN.css" />
     </head>
-
     <body>
         <header class="header">
             <a href="MDN.html"><img src="pictures/NEKO.png" alt="MDN" /></a>
+            <div class="header-right">
+                <input type="button" value="Upgrade plan" class="subButton" />
+            </div>
         </header>
         <div class="box">
-            このページはコミュニティーの尽力で英語から翻訳されました。MDN Web
-            Docs
+            このページはコミュニティーの尽力で英語から翻訳されました。MDN Web Docs
             コミュニティーについてもっと知り、仲間になるにはこちらから。ファビコンも猫だよ。
         </div>
         <h1>String length</h1>
@@ -41,8 +38,6 @@
                 <td>
                     1<br />
                     2<br />
-                    3<br />
-                    4<br />
                     <br />
                     <br />
                     <br />
@@ -54,24 +49,17 @@
         </table>
         <div class="buttonClass">
             <input type="button" value="Run >" id="runButton" class="button" />
-            <input
-                type="button"
-                value="Reset"
-                id="resetButton"
-                class="button"
-            /><br />
+            <input type="button" value="Reset" id="resetButton" class="button" /><br />
         </div>
         <div id="output"></div>
-
         <script src="script_MDN.js"></script>
-
-        <br />
         <h2>構文</h2>
         <div class="box2">
             <p>1+2;</p>
-            <p>a;</p>
-            <p>"a";</p>
+            <p>"ABCDE";</p>
+            <p>ABCDE;</p>
             <p>"ABCDE".length;</p>
+            <p>undefined</p>
             <p>
                 const num = 10;<br />
                 num;

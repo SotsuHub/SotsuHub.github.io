@@ -40,7 +40,9 @@ function functionExecution(program) {
             let LF = program.indexOf(checkString(program)) + 1;
             program = program.slice(LF);
 
-            return Function('"use strict";' + constCode + "return " + program)();
+            return Function(
+                '"use strict";' + constCode + "return " + program
+            )();
         } else {
             return Function('"use strict";return ' + program)();
         }

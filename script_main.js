@@ -14,6 +14,8 @@ const pictures = [];
 for (let i = 0; i <= gifCount; i++) {
     pictures[i] = `${url}unicorn_${i}.gif`;
 }
+pictures.push(`${url}unicorn_none.png`);
+pictures.push(`${url}unicorn_half.gif`);
 
 // ボタンが押された処理
 notPushButton.addEventListener("click", notPushButtonClick);
@@ -23,24 +25,24 @@ async function notPushButtonClick() {
     if (runFlag === 0) {
         if (count === 1 || count === 2) {
             runFlag = 1;
-            unicorn.src = url + "unicorn_0.gif";
-            await wait(4);
-            unicorn.src = url + "unicorn_1.gif";
+            unicorn.src = pictures[0];
+            await wait(5);
+            unicorn.src = pictures[1];
             count++;
             runFlag = 0;
         } else if (count === 3) {
             runFlag = 1;
-            for (const element of pictures) {
-                unicorn.src = element;
-                await wait(2.5);
+            for (let i = 0; i <= gifCount; i++) {
+                unicorn.src = pictures[i];
+                await wait(2.8);
             }
-            unicorn.src = url + "unicorn_none.png";
+            unicorn.src = pictures[5];
             await wait(7);
-            unicorn.src = url + "unicorn_half.gif";
+            unicorn.src = pictures[6];
             await wait(7);
-            unicorn.src = url + "unicorn_0.gif";
+            unicorn.src = pictures[0];
             await wait(7);
-            unicorn.src = url + "unicorn_1.gif";
+            unicorn.src = pictures[1];
             count = 1;
             runFlag = 0;
         } else {

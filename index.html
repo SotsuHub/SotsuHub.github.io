@@ -9,6 +9,13 @@
         <div class="input-header">
             <img src="KY.png" id="KY-img" />
             <h1>サービス行動目標 & 危険予知トレーニング</h1>
+
+            <input
+                type="button"
+                id="allClear_btn"
+                value="オールクリア"
+                onclick="pushClearButton();"
+            />
         </div>
 
         <div class="all-container">
@@ -68,23 +75,17 @@
                         </tr>
                     </table>
                 </div>
-
-                <div class="button-container">
-                    <input
-                        type="button"
-                        id="allClear_btn"
-                        value="オールクリア"
-                        onclick="pushClearButton();"
-                    />
-                    <input
-                        type="button"
-                        id="save_btn"
-                        value="入力完了 →"
-                        onclick="pushInputCompleteButton();"
-                    />
-                </div>
             </div>
-            <img src="basic7items.png" id="basic-img" />
+
+            <div class="button-container">
+                <img src="basic7items.png" id="basic-img" />
+                <input
+                    type="button"
+                    id="save_btn"
+                    value="入力完了 →"
+                    onclick="pushInputCompleteButton();"
+                />
+            </div>
         </div>
 
         <script src="script.js"></script>

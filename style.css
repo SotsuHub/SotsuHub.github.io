@@ -20,7 +20,7 @@
 }
 #basic-img {
     width: 320px;
-    height: 400px;
+    height: 430px;
     margin: 15px;
 }
 h1 {
@@ -34,7 +34,6 @@ h1 {
 
 /* 👇ボタン */
 .button-container {
-    display: flex;
     flex-wrap: nowrap;
     width: 900px;
 }
@@ -43,25 +42,26 @@ input[type="button"] {
     border-radius: 10px;
     border: #aaa;
     height: 35px;
-    margin-left: 10%;
     line-height: 0px;
     padding: 20px 20px;
 }
 #save_btn {
     background-color: #f29727;
-    margin-left: 60%;
+    margin-top: 100px;
 }
 #save_btn:hover {
     background-color: #bf771e;
 }
 #return_btn {
     background-color: #50a2b0;
+    margin-top: 100px;
 }
 #return_btn:hover {
     background-color: #38737d;
 }
 #allClear_btn {
     background-color: #cc4e4c;
+    margin-left: auto;
 }
 #allClear_btn:hover {
     background-color: #993a39;

@@ -1,7 +1,7 @@
 "use strict";
 
 // 👇ローカルストレージからデータを取得
-const populateTableFromLocalStorage = function () {
+const populateTableFromLocalStorage = () => {
     const jsonData = localStorage.getItem("inputData");
     if (jsonData) {
         const data = JSON.parse(jsonData);
@@ -12,7 +12,7 @@ const populateTableFromLocalStorage = function () {
 };
 
 // 👇テーブルに入力
-const setTableData = function (tableId, data) {
+const setTableData = (tableId, data) => {
     const table = document.getElementById(tableId);
     const rows = table.getElementsByTagName("tr");
 
@@ -31,7 +31,7 @@ const setTableData = function (tableId, data) {
 };
 
 // 👇入力完了ボタン処理
-const pushInputCompleteButton = function () {
+const pushInputCompleteButton = () => {
     // テーブルのデータを取得
     const table1Data = getTableData("table1");
     const table2Data = getTableData("table2");
@@ -48,7 +48,7 @@ const pushInputCompleteButton = function () {
 };
 
 // 👇各テキストエリアの値を取得
-const getTableData = function (tableId) {
+const getTableData = (tableId) => {
     const table = document.getElementById(tableId);
     const textarea = table.querySelectorAll("textarea");
     const data = [];
@@ -59,7 +59,7 @@ const getTableData = function (tableId) {
 };
 
 // 👇オールクリアボタン処理
-const pushClearButton = function () {
+const pushClearButton = () => {
     if (!confirm("本当にデータをクリアしますか？")) {
         return;
     }

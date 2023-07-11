@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>KYアプリ</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="input-header">
+            <img src="KY.png" id="KY-img" />
+            <h1>サービス行動目標 & 危険予知トレーニング</h1>
+        </div>
+
+        <div class="all-container">
+            <div class="left-container">
+                <div class="card-wrapper-large card-radius-large">
+                    <div class="input-title">
+                        サービス行動目標を班で考えよう！
+                    </div>
+
+                    <table class="tableClass1" id="table1">
+                        <td>
+                            <textarea
+                                class="textarea1"
+                                required
+                                placeholder="入力してください"
+                            ></textarea>
+                        </td>
+                    </table>
+                </div>
+
+                <div class="card-wrapper-large card-radius-large">
+                    <div class="input-title">
+                        作業前に危険予知を実施しよう！
+                    </div>
+                    <table class="tableClass1" id="table2">
+                        <td>< どんな危険が考えられるか？ ></td>
+                        <tr>
+                            <td>
+                                <textarea
+                                    class="textarea2"
+                                    required
+                                    placeholder="入力してください"
+                                ></textarea>
+                            </td>
+                            <td>作業で</td>
+                            <td>
+                                <textarea
+                                    class="textarea2"
+                                    required
+                                    placeholder="入力してください"
+                                ></textarea>
+                            </td>
+                            <td>が考えられます</td>
+                        </tr>
+                    </table>
+
+                    <table class="tableClass1" id="table3">
+                        <td>< 予防策は？ ></td>
+                        <tr>
+                            <td>
+                                <textarea
+                                    class="textarea1"
+                                    required
+                                    placeholder="入力してください"
+                                ></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="button-container">
+                    <input
+                        type="button"
+                        id="save_btn"
+                        value="入力完了 →"
+                        onclick="pushInputCompleteButton();"
+                    />
+                </div>
+            </div>
+            <img src="basic7items.png" id="basic-img" />
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

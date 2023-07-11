@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>KYアプリ</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="result-header">
+            <img src="KY.png" id="KY-img" />
+            <h1>サービス行動目標 & 危険予知トレーニング</h1>
+        </div>
+
+        <div class="all-container">
+            <div class="left-container">
+                <div class="card-wrapper-large card-radius-large">
+                    <div class="result-title">
+                        私たちのサービス行動目標は・・・
+                    </div>
+
+                    <table class="tableClass2" id="table1">
+                        <td>
+                            <textarea class="textarea1"></textarea>
+                        </td>
+                    </table>
+                </div>
+
+                <div class="card-wrapper-large card-radius-large">
+                    <div class="result-title">私たちの危険予知は・・・</div>
+                    <table class="tableClass2" id="table2">
+                        <td>< どんな危険が考えられるか？ ></td>
+                        <tr>
+                            <td>
+                                <textarea class="textarea2"></textarea>
+                            </td>
+                            <td>作業で</td>
+                            <td>
+                                <textarea class="textarea2"></textarea>
+                            </td>
+                            <td>が考えられます</td>
+                        </tr>
+                    </table>
+
+                    <table class="tableClass2" id="table3">
+                        <td>< 予防策は？ ></td>
+                        <tr>
+                            <td>
+                                <textarea class="textarea1"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="button-container">
+                    <input
+                        type="button"
+                        id="return_btn"
+                        value="← 入力へ戻る"
+                        onclick="location.href='index.html'"
+                    />
+                    <input
+                        type="button"
+                        id="allClear_btn"
+                        value="オールクリア"
+                        onclick="pushClearButton();"
+                    />
+                </div>
+            </div>
+            <img src="basic7items.png" id="basic-img" />
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
